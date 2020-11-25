@@ -30,7 +30,11 @@ module.exports = {
     }
   },
   module: {
-    rules: [
+    les: [
+      {
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!postcss-loader!sass-loader',
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
